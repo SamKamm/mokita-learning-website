@@ -8,7 +8,16 @@ The current site (mokitalearning.com) exists but Sam is unhappy with it. This is
 
 ## About Sam
 
-Sam is not a developer and does not understand code. Do not use technical jargon. Explain everything in plain English. He makes decisions about content, design, and direction — Claude handles all implementation.
+Sam is the business owner and is very new to code, development, and anything technical. He is not a developer. His dev friend helped with initial setup but is no longer involved day-to-day.
+
+**How to work with Sam:**
+- Explain everything in plain English — no jargon without explanation
+- When running terminal commands, explain what each one does and why
+- When using git/GitHub, explain what's happening at each step (e.g. what a commit is, what a push does)
+- When making deployment steps, spell them out one at a time
+- Treat every interaction as a chance to teach — the goal is for Sam to gradually understand his own workflow, not just follow instructions blindly
+- Claude handles all implementation; Sam makes decisions about content, design, and direction
+- Keep instructions short and numbered where possible — walls of text are overwhelming
 
 ## Tech stack
 
@@ -45,12 +54,13 @@ Sam is not a developer and does not understand code. Do not use technical jargon
 4. Include a concrete, low-pressure call to action
 5. Add social proof (testimonials, anonymised case studies)
 
-## Deployment (when ready)
+## Deployment
 
-1. Upload the contents of C:\Users\sam\Website to Cloudflare Pages
-2. In Cloudflare Pages, add custom domain: mokitalearning.com
-3. In 123reg, update nameservers to Cloudflare's (provided during setup)
-4. DNS propagation takes up to 48 hours
+- **Hosting:** GitHub Pages (free)
+- **Repo:** https://github.com/SamKamm/mokita-learning-website
+- **Live URL:** https://samkamm.github.io/mokita-learning-website/
+- **Custom domain:** mokitalearning.com (to be configured in 123reg — DNS CNAME pointing to samkamm.github.io)
+- **Deploy command:** `git add . && git commit -m "update" && git push` — site goes live automatically within ~60 seconds
 
 ## Key business info
 
