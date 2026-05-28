@@ -64,7 +64,7 @@ nav {
 
 .nav-logo .placeholder-logo {
   display: inline-block;
-  background: #1a1a1a;
+  background: #2d7171;
   color: #fff;
   padding: 0.35rem 0.75rem;
   font-size: 0.85rem;
@@ -519,6 +519,13 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .testimonial-carousel .testimonial {
     transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-dots .dot {
+    width: 16px;
+    height: 16px;
   }
 }
 
