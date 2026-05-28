@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Get in Touch — Mokita Learning</title>
-  <meta name="description" content="Start a conversation with Mokita Learning. No pitch, no pressure — just a chance to talk." />
+  <title>Get in Touch — Soundings</title>
+  <meta name="description" content="Start a conversation with Soundings. No pitch, no pressure — just a chance to talk." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,11 +12,12 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <span class="placeholder-logo">Mokita Learning</span>
+        <span class="placeholder-logo">Soundings</span>
       </a>
       <ul class="nav-links">
         <li><a href="what-we-do.html">What We Do</a></li>
         <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Get in Touch</a></li>
       </ul>
@@ -35,8 +36,7 @@
     <div class="container contact-layout">
 
       <div class="contact-form-wrap">
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
+        <form class="contact-form" id="contact-form">
 
           <div class="form-group">
             <label for="name">Your name</label>
@@ -58,7 +58,8 @@
             <textarea id="message" name="message" rows="6" required placeholder="Tell us what's happening in your organisation, what you're hoping to address, or just ask a question..."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary">Send message</button>
+          <button type="submit" class="btn btn-primary" id="submit-btn">Send message</button>
+          <div id="form-status" style="margin-top: 1.25rem; display: none;"></div>
         </form>
       </div>
 
@@ -74,10 +75,45 @@
 
   <footer>
     <div class="footer-inner">
-      <span>© 2026 Mokita Learning</span>
+      <span>© 2026 Soundings</span>
       <span><a href="mailto:hello@mokitalearning.com">hello@mokitalearning.com</a></span>
     </div>
   </footer>
+
+  <script>
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwzX4bSfGi940hJcyNQTfdouJHBpyPYJH3W5Y0QiZF3_V0r7poaF0SyB3BaE_itwkvF/exec';
+
+    const form = document.getElementById('contact-form');
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      const params = new URLSearchParams();
+      params.append('name', form.name.value);
+      params.append('organisation', form.organisation.value);
+      params.append('email', form.email.value);
+      params.append('message', form.message.value);
+
+      fetch(SCRIPT_URL, { method: 'POST', body: params, mode: 'no-cors' })
+        .then(function() {
+          form.style.display = 'none';
+          status.style.display = 'block';
+          status.innerHTML = '<p style="color:#2d7171; font-size:1.05rem;"><strong>Message sent.</strong> Sam will be in touch within one working day.</p>';
+        })
+        .catch(function() {
+          btn.textContent = 'Send message';
+          btn.disabled = false;
+          status.style.display = 'block';
+          status.innerHTML = '<p style="color:#c0392b;">Something went wrong — please try again or email <a href="mailto:hello@mokitalearning.com">hello@mokitalearning.com</a> directly.</p>';
+        });
+    });
+  </script>
 
 </body>
 </html>
