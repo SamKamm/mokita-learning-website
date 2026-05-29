@@ -586,6 +586,15 @@ footer {
   }
 }
 
+/* ===== WRITING INDEX THUMBNAILS ===== */
+.writing-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
 /* ===== ARTICLE FIGURES ===== */
 .article-figure {
   margin: 2rem 0;
