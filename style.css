@@ -586,6 +586,22 @@ footer {
   }
 }
 
+/* ===== ARTICLE FIGURES ===== */
+.article-figure {
+  margin: 2rem 0;
+}
+.article-figure img {
+  width: 100%;
+  display: block;
+}
+.article-figure figcaption {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
 /* ===== CONTACT PAGE ===== */
 .contact-layout {
   display: grid;
