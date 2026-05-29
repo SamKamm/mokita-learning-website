@@ -294,6 +294,8 @@ blockquote {
 
 /* ===== CTA SECTION ===== */
 .cta-section {
+  background: #f4f1ed;
+  border-top: 1px solid #e8e8e8;
   text-align: center;
   padding: 5rem 0;
 }
@@ -320,7 +322,11 @@ footer {
 
 /* ===== WHAT WE DO PAGE ===== */
 .offering { padding: 3rem 0; }
-.offering h2 { margin-bottom: 1rem; }
+.offering h2 {
+  margin-bottom: 1rem;
+  border-left: 3px solid #2d7171;
+  padding-left: 0.75rem;
+}
 .offering-list { margin: 1rem 0 1rem 1.5rem; color: #555; }
 .offering-list li { margin-bottom: 0.4rem; }
 
