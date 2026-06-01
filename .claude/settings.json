@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe",
+            "args": ["-NoProfile", "-File", ".claude\\check-schema.ps1"],
+            "statusMessage": "Checking SEO Schema markup..."
+          }
+        ]
+      }
+    ]
+  }
+}
