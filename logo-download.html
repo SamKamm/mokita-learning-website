@@ -4,67 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soundings — Logo Downloads</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; background: #ece8e2; padding: 3rem 2rem 6rem; color: #1a1a1a; }
-    h1 { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem; }
+    .page-title { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem; }
     .intro { font-size: 0.9rem; color: #777; margin-bottom: 3rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3px; max-width: 860px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 3px; max-width: 860px; }
     .cell { background: #fff; padding: 2.5rem; }
     .cell-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #bbb; margin-bottom: 1.5rem; }
     .preview { padding: 1.5rem 0 2rem; display: flex; align-items: center; }
-    .preview-dark { background: #1a1a1a; padding: 1.5rem; margin: 1rem -2.5rem; }
+    .preview-dark { background: #1a1a1a; padding: 1.5rem; margin: 0 -2.5rem 2rem; }
+    .btn-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
     .btn {
-      display: inline-block; padding: 0.75rem 1.5rem;
+      padding: 0.65rem 1.25rem;
       background: #2d7171; color: #fff; border: none;
-      font-family: Georgia, serif; font-size: 0.85rem;
-      letter-spacing: 0.04em; cursor: pointer; margin-top: 0.5rem;
+      font-family: Georgia, serif; font-size: 0.8rem;
+      letter-spacing: 0.04em; cursor: pointer;
     }
     .btn:hover { background: #235959; }
-    .note { font-size: 0.8rem; color: #aaa; margin-top: 0.75rem; line-height: 1.5; }
-    .favicon-row { display: flex; align-items: center; gap: 1.5rem; padding: 1rem 0 1.5rem; }
+    .btn.secondary {
+      background: transparent; color: #2d7171;
+      border: 1px solid #2d7171;
+    }
+    .btn.secondary:hover { background: #f0f8f8; }
+    .note { font-size: 0.78rem; color: #aaa; margin-top: 0.85rem; line-height: 1.5; }
     .tab-mock {
       background: #e8e8e8; border-radius: 8px 8px 0 0; padding: 6px 16px 6px 8px;
       display: flex; align-items: center; gap: 6px; font-size: 11px; color: #444;
       width: 200px; box-shadow: inset 0 -1px 0 #ccc;
     }
     .tab-mock img { width: 16px; height: 16px; }
+    .spinner { display: none; font-size: 0.78rem; color: #aaa; margin-top: 0.5rem; }
   </style>
 </head>
 <body>
 
-  <h1>Soundings — Logo Downloads</h1>
-  <p class="intro">Click a button to download. Files save straight to your Downloads folder.</p>
+  <p class="page-title">Soundings — Logo Downloads</p>
+  <p class="intro">Click any button to download. Files save straight to your Downloads folder.</p>
 
   <div class="grid">
 
     <!-- HORIZONTAL LOGO -->
     <div class="cell">
       <p class="cell-label">Full logo — horizontal</p>
+
       <div class="preview">
-        <svg width="360" height="68" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="340" height="64" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M 0 23 A 11 11 0 0 1 11 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
           <path d="M 0 15 A 19 19 0 0 1 19 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
           <path d="M 0 7  A 27 27 0 0 1 27 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
-          <text x="38" y="24" font-family="Georgia, serif" font-size="13" fill="#1a1a1a" letter-spacing="1.5">SOUNDINGS</text>
+          <text x="38" y="24" font-family="'Raleway', sans-serif" font-weight="300" font-size="12" fill="#1a1a1a" letter-spacing="3">SOUNDINGS</text>
         </svg>
       </div>
+
       <div class="preview-dark">
-        <svg width="360" height="68" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="340" height="64" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M 0 23 A 11 11 0 0 1 11 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
           <path d="M 0 15 A 19 19 0 0 1 19 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
           <path d="M 0 7  A 27 27 0 0 1 27 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
-          <text x="38" y="24" font-family="Georgia, serif" font-size="13" fill="#ffffff" letter-spacing="1.5">SOUNDINGS</text>
+          <text x="38" y="24" font-family="'Raleway', sans-serif" font-weight="300" font-size="12" fill="#ffffff" letter-spacing="3">SOUNDINGS</text>
         </svg>
       </div>
-      <br/>
-      <button class="btn" onclick="downloadH()">Download PNG (1200 × 227 px)</button>
-      <p class="note">Transparent background. Good for Word, PowerPoint, Google Slides, and email signatures.</p>
+
+      <div class="btn-row">
+        <button class="btn" onclick="downloadH('png', null)">PNG — transparent</button>
+        <button class="btn secondary" onclick="downloadH('jpg', '#ffffff')">JPEG — white bg</button>
+        <button class="btn secondary" onclick="downloadH('jpg', '#1a1a1a')">JPEG — dark bg</button>
+      </div>
+      <p class="note">1200 × 227 px. PNG is best for most uses. JPEG if the tool you're using doesn't accept PNG.</p>
     </div>
 
-    <!-- SQUARE MARK -->
+    <!-- SQUARE MARK / THUMBNAIL -->
     <div class="cell">
-      <p class="cell-label">Square mark — icon / thumbnail</p>
+      <p class="cell-label">Square mark — icon &amp; thumbnail</p>
+
       <div class="preview">
         <svg width="160" height="160" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="100" fill="#2d7171"/>
@@ -73,13 +89,17 @@
           <path d="M 0 20 A 80 80 0 0 1 80 100" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
         </svg>
       </div>
-      <button class="btn" onclick="downloadMark()">Download PNG (800 × 800 px)</button>
+
+      <div class="btn-row">
+        <button class="btn" onclick="downloadMark('png')">PNG — 800 × 800</button>
+        <button class="btn secondary" onclick="downloadMark('jpg')">JPEG — 800 × 800</button>
+      </div>
       <p class="note">Use for YouTube channel icon, LinkedIn logo, video watermarks, and document headers.</p>
     </div>
 
     <!-- FAVICON PREVIEW -->
     <div class="cell">
-      <p class="cell-label">Browser tab icon (favicon)</p>
+      <p class="cell-label">Browser tab icon</p>
       <div class="preview" style="flex-direction: column; align-items: flex-start; gap: 1.5rem;">
         <div class="tab-mock">
           <img src="favicon.svg" alt="favicon" />
@@ -92,16 +112,16 @@
             <path d="M 0 14 A 18 18 0 0 1 18 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
             <path d="M 0 6  A 26 26 0 0 1 26 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
           </svg>
-          <span style="font-size:0.8rem; color:#888;">Actual size (32×32)</span>
+          <span style="font-size:0.8rem; color:#888;">Actual size (32 × 32 px)</span>
         </div>
       </div>
-      <p class="note">Already live on the website — this is just a preview. The icon loads automatically from favicon.svg.</p>
+      <p class="note">Already live on the website — loads automatically. No download needed.</p>
     </div>
 
   </div>
 
   <script>
-    const PI = Math.PI;
+    var PI = Math.PI;
 
     function drawArcs(ctx, cx, cy, radii, color, lineWidth) {
       ctx.strokeStyle = color;
@@ -114,7 +134,7 @@
       });
     }
 
-    function triggerDownload(canvas, filename) {
+    function triggerDownload(canvas, filename, mimeType, quality) {
       canvas.toBlob(function(blob) {
         var a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
@@ -122,32 +142,48 @@
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-      }, 'image/png');
+        URL.revokeObjectURL(a.href);
+      }, mimeType, quality || 1.0);
     }
 
-    function downloadH() {
+    function downloadH(format, bgColor) {
       var W = 1200, H = 227;
       var scale = W / 180;
-      var canvas = document.createElement('canvas');
-      canvas.width = W;
-      canvas.height = H;
-      var ctx = canvas.getContext('2d');
 
-      ctx.clearRect(0, 0, W, H);
+      document.fonts.load('300 ' + Math.round(12 * scale) + 'px Raleway').then(function() {
+        var canvas = document.createElement('canvas');
+        canvas.width = W;
+        canvas.height = H;
+        var ctx = canvas.getContext('2d');
 
-      drawArcs(ctx, 0, H, [11 * scale, 19 * scale, 27 * scale], '#2d7171', 1.6 * scale);
+        if (bgColor) {
+          ctx.fillStyle = bgColor;
+          ctx.fillRect(0, 0, W, H);
+        } else {
+          ctx.clearRect(0, 0, W, H);
+        }
 
-      ctx.fillStyle = '#1a1a1a';
-      ctx.font = Math.round(13 * scale) + 'px Georgia, serif';
-      ctx.letterSpacing = (1.5 * scale) + 'px';
-      ctx.fillText('SOUNDINGS', Math.round(38 * scale), Math.round(24 * scale));
+        var arcColor = (bgColor === '#1a1a1a') ? '#7bbcbc' : '#2d7171';
+        var textColor = (bgColor === '#1a1a1a') ? '#ffffff' : '#1a1a1a';
 
-      triggerDownload(canvas, 'soundings-logo.png');
+        drawArcs(ctx, 0, H, [11 * scale, 19 * scale, 27 * scale], arcColor, 1.6 * scale);
+
+        ctx.fillStyle = textColor;
+        ctx.font = '300 ' + Math.round(12 * scale) + 'px Raleway, sans-serif';
+        ctx.letterSpacing = (3 * scale) + 'px';
+        ctx.fillText('SOUNDINGS', Math.round(38 * scale), Math.round(24 * scale));
+
+        var ext = format === 'jpg' ? 'jpg' : 'png';
+        var bgSuffix = bgColor === '#1a1a1a' ? '-dark' : (bgColor === '#ffffff' ? '-white' : '');
+        var mime = format === 'jpg' ? 'image/jpeg' : 'image/png';
+        triggerDownload(canvas, 'soundings-logo' + bgSuffix + '.' + ext, mime, 0.95);
+      });
     }
 
-    function downloadMark() {
+    function downloadMark(format) {
       var S = 800;
       var scale = S / 100;
+
       var canvas = document.createElement('canvas');
       canvas.width = S;
       canvas.height = S;
@@ -158,7 +194,8 @@
 
       drawArcs(ctx, 0, S, [32 * scale, 56 * scale, 80 * scale], '#ffffff', 3 * scale);
 
-      triggerDownload(canvas, 'soundings-mark.png');
+      var mime = format === 'jpg' ? 'image/jpeg' : 'image/png';
+      triggerDownload(canvas, 'soundings-mark.' + format, mime, 0.95);
     }
   </script>
 
