@@ -57,19 +57,9 @@ nav {
 }
 
 .nav-logo {
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
-  font-weight: bold;
-}
-
-.nav-logo .placeholder-logo {
-  display: inline-block;
-  background: #2d7171;
-  color: #fff;
-  padding: 0.35rem 0.75rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  line-height: 0;
 }
 
 .nav-links {
