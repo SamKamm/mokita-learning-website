@@ -376,7 +376,7 @@ footer {
   object-fit: cover;
   object-position: center 25%;
   display: block;
-  transform: translateX(-0.5%) scale(1.2);
+  transform: translateX(-0.75%) scale(1.2);
   transform-origin: center 30%;
 }
 
