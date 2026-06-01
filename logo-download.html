@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soundings — Logo Downloads</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Georgia, serif; background: #ece8e2; padding: 3rem 2rem 6rem; color: #1a1a1a; }
+    h1 { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 0.4rem; }
+    .intro { font-size: 0.9rem; color: #777; margin-bottom: 3rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3px; max-width: 860px; }
+    .cell { background: #fff; padding: 2.5rem; }
+    .cell-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: #bbb; margin-bottom: 1.5rem; }
+    .preview { padding: 1.5rem 0 2rem; display: flex; align-items: center; }
+    .preview-dark { background: #1a1a1a; padding: 1.5rem; margin: 1rem -2.5rem; }
+    .btn {
+      display: inline-block; padding: 0.75rem 1.5rem;
+      background: #2d7171; color: #fff; border: none;
+      font-family: Georgia, serif; font-size: 0.85rem;
+      letter-spacing: 0.04em; cursor: pointer; margin-top: 0.5rem;
+    }
+    .btn:hover { background: #235959; }
+    .note { font-size: 0.8rem; color: #aaa; margin-top: 0.75rem; line-height: 1.5; }
+    .favicon-row { display: flex; align-items: center; gap: 1.5rem; padding: 1rem 0 1.5rem; }
+    .tab-mock {
+      background: #e8e8e8; border-radius: 8px 8px 0 0; padding: 6px 16px 6px 8px;
+      display: flex; align-items: center; gap: 6px; font-size: 11px; color: #444;
+      width: 200px; box-shadow: inset 0 -1px 0 #ccc;
+    }
+    .tab-mock img { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+
+  <h1>Soundings — Logo Downloads</h1>
+  <p class="intro">Click a button to download. Files save straight to your Downloads folder.</p>
+
+  <div class="grid">
+
+    <!-- HORIZONTAL LOGO -->
+    <div class="cell">
+      <p class="cell-label">Full logo — horizontal</p>
+      <div class="preview">
+        <svg width="360" height="68" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 23 A 11 11 0 0 1 11 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M 0 15 A 19 19 0 0 1 19 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M 0 7  A 27 27 0 0 1 27 34" stroke="#2d7171" stroke-width="1.6" stroke-linecap="round"/>
+          <text x="38" y="24" font-family="Georgia, serif" font-size="13" fill="#1a1a1a" letter-spacing="1.5">SOUNDINGS</text>
+        </svg>
+      </div>
+      <div class="preview-dark">
+        <svg width="360" height="68" viewBox="0 0 180 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0 23 A 11 11 0 0 1 11 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M 0 15 A 19 19 0 0 1 19 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M 0 7  A 27 27 0 0 1 27 34" stroke="#7bbcbc" stroke-width="1.6" stroke-linecap="round"/>
+          <text x="38" y="24" font-family="Georgia, serif" font-size="13" fill="#ffffff" letter-spacing="1.5">SOUNDINGS</text>
+        </svg>
+      </div>
+      <br/>
+      <button class="btn" onclick="downloadH()">Download PNG (1200 × 227 px)</button>
+      <p class="note">Transparent background. Good for Word, PowerPoint, Google Slides, and email signatures.</p>
+    </div>
+
+    <!-- SQUARE MARK -->
+    <div class="cell">
+      <p class="cell-label">Square mark — icon / thumbnail</p>
+      <div class="preview">
+        <svg width="160" height="160" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" fill="#2d7171"/>
+          <path d="M 0 68 A 32 32 0 0 1 32 100" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M 0 44 A 56 56 0 0 1 56 100" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M 0 20 A 80 80 0 0 1 80 100" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+      <button class="btn" onclick="downloadMark()">Download PNG (800 × 800 px)</button>
+      <p class="note">Use for YouTube channel icon, LinkedIn logo, video watermarks, and document headers.</p>
+    </div>
+
+    <!-- FAVICON PREVIEW -->
+    <div class="cell">
+      <p class="cell-label">Browser tab icon (favicon)</p>
+      <div class="preview" style="flex-direction: column; align-items: flex-start; gap: 1.5rem;">
+        <div class="tab-mock">
+          <img src="favicon.svg" alt="favicon" />
+          Soundings
+        </div>
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" fill="#2d7171"/>
+            <path d="M 0 22 A 10 10 0 0 1 10 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M 0 14 A 18 18 0 0 1 18 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M 0 6  A 26 26 0 0 1 26 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span style="font-size:0.8rem; color:#888;">Actual size (32×32)</span>
+        </div>
+      </div>
+      <p class="note">Already live on the website — this is just a preview. The icon loads automatically from favicon.svg.</p>
+    </div>
+
+  </div>
+
+  <script>
+    const PI = Math.PI;
+
+    function drawArcs(ctx, cx, cy, radii, color, lineWidth) {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      radii.forEach(function(r) {
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, -PI / 2, 0);
+        ctx.stroke();
+      });
+    }
+
+    function triggerDownload(canvas, filename) {
+      canvas.toBlob(function(blob) {
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }, 'image/png');
+    }
+
+    function downloadH() {
+      var W = 1200, H = 227;
+      var scale = W / 180;
+      var canvas = document.createElement('canvas');
+      canvas.width = W;
+      canvas.height = H;
+      var ctx = canvas.getContext('2d');
+
+      ctx.clearRect(0, 0, W, H);
+
+      drawArcs(ctx, 0, H, [11 * scale, 19 * scale, 27 * scale], '#2d7171', 1.6 * scale);
+
+      ctx.fillStyle = '#1a1a1a';
+      ctx.font = Math.round(13 * scale) + 'px Georgia, serif';
+      ctx.letterSpacing = (1.5 * scale) + 'px';
+      ctx.fillText('SOUNDINGS', Math.round(38 * scale), Math.round(24 * scale));
+
+      triggerDownload(canvas, 'soundings-logo.png');
+    }
+
+    function downloadMark() {
+      var S = 800;
+      var scale = S / 100;
+      var canvas = document.createElement('canvas');
+      canvas.width = S;
+      canvas.height = S;
+      var ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = '#2d7171';
+      ctx.fillRect(0, 0, S, S);
+
+      drawArcs(ctx, 0, S, [32 * scale, 56 * scale, 80 * scale], '#ffffff', 3 * scale);
+
+      triggerDownload(canvas, 'soundings-mark.png');
+    }
+  </script>
+
+</body>
+</html>
